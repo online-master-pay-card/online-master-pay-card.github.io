@@ -1,0 +1,272 @@
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 0px 3px black;
+}
+
+nav:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+nav a img{
+    width: 100px;
+}
+
+main{
+    height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem;
+    /* margin: 1rem 0rem; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(132, 112, 89, 0.5)), url(../gallery/pics/login_bg1.png);
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 0px 5px 1px black inset; */
+}
+
+#auth_side_bar{
+    width: 60%;
+}
+
+#auth_side_bar h2{
+    text-align: center;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    text-shadow: -3px 1px white;
+}
+
+#auth_form{
+    width: 25%;
+    min-height: 50dvh;
+    /* border-radius: 20px; */
+    padding: 1rem 2rem;
+    box-shadow: -2px -1px 5px 1px black;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../gallery/pics/form_nav_bar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: flyLogin 1s ease-in-out;
+}
+
+#auth_form h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: darkred;
+    font-size: 2rem;
+    word-spacing: 0.8rem;
+}
+
+.inputs_container{
+    margin: 1.5rem 0rem;
+    position: relative;
+}
+
+.inputs_container img{
+    position: absolute;
+    width: 20px;
+    right: 0rem;
+    top: 10%;
+    cursor: pointer;
+}
+
+.inputs_container b{
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.inputs_container input{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.5rem 0rem;
+    border: 0px solid gray;
+    border-width: 0px 0px 1px 0px;
+    font-size: 1rem;
+}
+
+.inputs_container input::placeholder{
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.inputs_container input:focus{
+    border-color: black !important;
+}
+
+.checkbox_container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: smaller;
+}
+
+.checkbox_container input{
+    accent-color: darkred;
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#acount_btn{
+    visibility: hidden;
+    display: flex;
+    margin: 2rem auto;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 0.3rem 1.5rem;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+#acount_btn:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+.links_container{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 0.5rem 0rem;
+    color: rgb(1, 59, 120);
+    font-weight: 540;
+}
+
+.links_container a:hover{
+    color: darkred;
+    transform: scale(1.03);
+}
+
+/*  */
+@keyframes flyLogin {
+    from{
+        transform: translateY(-50%);
+        opacity: 0.4;
+    }
+
+    to{
+        transform: translateY(0%);
+        opacity: 0.9;
+    }
+}
+
+/*  */
+
+@media (max-width:1030px) {
+    main{
+        height: 96dvh;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    #auth_side_bar{
+        width: 50%;
+    }
+
+    #auth_form{
+        width: 45%;
+        min-height: 20dvh;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:900px) {
+    main{
+        height: 96dvh;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    #auth_side_bar{
+        width: 40%;
+    }
+
+    #auth_side_bar h2{
+        font-size: 3.3rem;
+    }
+
+    #auth_form{
+        width: 60%;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width:650px) {
+    nav{
+        padding: 0.7rem 0.1rem 0.3rem 0.5rem;
+    }
+
+    nav a img{
+        width: 180px;
+    }
+
+    main{
+        height: 98dvh;
+        gap: 0rem;
+        padding: 0rem;
+        background-size: cover;
+    }
+    
+    #auth_side_bar{
+        display: none;
+    }
+
+    #auth_form{
+        width: 70%;
+        padding: 2rem;
+        box-shadow: -2px 1px 5px 1px black;
+    }
+}
+
+@media (max-width:500px) {
+
+    main{
+        height: 100dvh;
+    }
+
+    #auth_form{
+        width: 80%;
+    }
+
+    footer{
+        font-size: 0.7rem;
+    }
+
+    footer ul li{
+        padding: 0.2rem 0.1rem;
+    }
+}
+
+@media (max-width:400px) {
+    nav a img{
+        width: 150px;
+    }
+
+    #auth_form{
+        width: 90%;
+        padding: 1.5rem 0.7rem;
+    }
+
+    #auth_form h1{
+        font-size: 1.8rem;
+        word-spacing: 0.5rem;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+}

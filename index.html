@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pics/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./batch.css">
+    <link rel="stylesheet" href="./beneficiary.css">
+    <title>Online Master Pay Card</title>
+    <script src="./jquery.js"></script>
+</head>
+
+<div id="preloading">
+    <img src="./pics/logo.png" alt="9484">
+</div>
+
+<body>
+
+    <ul id="nav">
+        <section id="nav_list">
+            <a href="./"><img src="./pics/logo.png" alt="944"></a>
+            <li><a href="#become_a_master" class="ma_nav">Become a Master</a></li>
+            <li><a href="#for_business" class="ma_nav_list">Business</a></li>
+            <li><a href="#for_professional" class="ma_nav_list">Professionals</a></li>
+            <li><a href="#for_inovators" class="ma_nav_list">Inovators & AI Tech</a></li>
+            <li><a href="./?page=beneficiary">Beneficiries</a></li>
+        </section>
+
+        <form id="batch_form">
+            <b>Batch No.:</b>
+            <input type="search" id="batch_input" placeholder="Search">
+            <button><img src="./pics/search.svg" alt="search"></button>
+        </form>
+    </ul>
+
+
+    <main id="main">
+        <div id="video">
+            <video loop muted autoplay src="./gallery/9789.mp4"></video>
+        </div>
+
+        <div id="landing">
+            <h1>Unlocking potential for people, businesses and governments, all around the world.</h1>
+
+            <section class="main_section">
+                <h2 id="master_h2">Powering economies and empowering people</h2>
+                
+                <section id="become_a_master">
+
+                    <form id="reg_form">
+
+                        <h3>Registration Form</h3>
+                        
+                        <div id="reg_content1">
+                            <p>
+                                <b>First Name:</b>
+                                <input type="text" id="firstName" class="firstInput" placeholder="First Name">
+                            </p>
+
+                            <p>
+                                <b>Middle Name:</b>
+                                <input type="text" id="middleName" class="firstInput" placeholder="Middle Name">
+                            </p>
+
+                            <p>
+                                <b>Last Name:</b>
+                                <input type="text" id="lastName" class="firstInput" placeholder="Last Name">
+                            </p>
+
+                            <p>
+                                <b>Select Category:</b>
+                                <select id="selectCategory" class="firstInput">
+                                    <option value="">Select . . .</option>
+                                    <option value="Technology">Software/AI Developer</option>
+                                    <option value="Business">Startups, SMEs, etc.</option>
+                                    <option value="Medical">Doctor, Nurse, Vertinary, etc.</option>
+                                    <option value="Accedmic">Professor, Lecturer, Teacher, etc.</option>
+                                    <option value="Student">Student, Apprentics, etc.</option>
+                                    <option value="Hospitality">Travel, Hotel, Agent etc.</option>
+                                </select>
+                            </p>
+                        </div>
+
+                        <div id="reg_content2" style="display: none;">
+                            <img src="./pics/back.svg" id="go_back_img" alt="949">
+
+                            <p>
+                                <b>E-mail Address:</b>
+                                <input type="email" id="emailAddress" class="secondInput" placeholder="E-mail Address">
+                            </p>
+
+                            <p>
+                                <b>Home Address:</b>
+                                <input type="text" id="homeAddress" class="secondInput" placeholder="Home Address">
+                            </p>
+
+                            <p>
+                                <b>Phone Number:</b>
+                                <input type="tel" id="phoneNumber" class="secondInput" placeholder="+1 808 0000">
+                            </p>
+
+                            <p>
+                                <b>Date of Birth:</b>
+                                <input type="date" id="dateBirth" class="secondInput">
+                            </p>
+                        </div>
+
+                        <button id="sub_btn">Next</button>
+                    </form>
+
+                    <div id="reg_sidebar" class="ma_absolute">
+                        <img src="./gallery/78778.gif" alt="904">
+                    </div>
+                </section>
+            </section>
+
+            <section id="for_business" class="ma_absolute main_section main_absulte">
+                <h3>BUSINESS AND SOLUTIONS</h3>
+                 <h2>Together, the possibilities are priceless</h2>
+                <img src="./gallery/business.jpg" alt="848">
+            </section>
+
+            <section id="for_professional" class="ma_absolute main_section main_absulte">
+                <h3>PRICELESS EXPERIENCES</h3>
+                <h2>Experiences that ignite your passions</h2>
+                <img src="./gallery/professionals.jpg" alt="948">
+            </section>
+
+            <section id="for_inovators" class="ma_absolute main_section main_absulte">
+                <h3>Insights & Intelligence</h3>
+                 <h2>Benefits and services that support your ambitions</h2>
+                <img src="./gallery/tech.jpg" alt="437">
+            </section>
+        </div>
+
+    </main>
+    
+</body>
+
+<footer id="footer"></footer>
+
+<script src="./card.js"></script>
+<script src="./batch.js"></script>
+<script src="./beneficiary.js"></script>
+</html>
