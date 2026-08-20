@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../pics/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/home_extras.css"> 
+    <title>Online account login</title>
+    <script src="../jquery.js"></script>
+</head>
+
+<div id="app_loading">
+    <p></p>
+    <img src="../pics/logo.png" alt="Loading...">
+</div>
+
+<body>
+
+    <nav>
+        <div id="nav_profile">
+            <img id="user_photo" src="../icons/favicon.png" alt="Profile Photo">
+            <span id="user_name"></span>
+        </div>
+
+        <ul id="nav_notification">
+            <li>
+                <img onclick="customerCareChat()" src="../icons/chat.svg" alt="live chat">
+            </li>
+            <li>
+                <img onclick="customerCareMail()" src="../icons/mail.svg" alt="mailing address">
+            </li>
+            <li>
+                <img onclick="notifyAppCount()" src="../icons/notification.svg" alt="notifications">
+                <sup id="notify_count"></sup>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  -->
+
+    <div id="display_content">
+        <img id="popup_cancle_img" src="../icons/close.svg" alt="Cancel">
+        <section id="display_results"></section>
+    </div>
+
+    <!--  -->
+
+    <main id="dash_main">
+        <section id="side_panel">
+            <ul>
+                
+                <li id="side_panel_transfer">
+                    <a href="?panel=transfer_panel">
+                        <img id="panel_transfer_icon" src="../icons/transfer.svg">
+                        <span>Transfer</span>
+                    </a>
+                </li>
+
+                <li id="side_panel_cards">
+                    <a href="?panel=cards_panel"> 
+                        <img id="panel_card_icon" src="../icons/card.svg"> 
+                        <span>Cards</span>
+                    </a>
+                </li>
+                
+                <li id="side_panel_home">
+                    <a href="?panel=home_panel">
+                        <img id="panel_home_icon" src="../icons/home.svg"> 
+                        <span>Home</span></a>
+                </li>
+
+                <li id="side_panel_activities">
+                    <a href="?panel=activities_panel">
+                        <img id="panel_activities_icon" src="../icons/metric.svg">
+                        <span>Activities</span>
+                    </a>
+                </li>
+
+                <li id="side_panel_profile">
+                    <a href="?panel=profile_panel">
+                        <img id="panel_profile_icon" src="../icons/profile.svg">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="main_panel">
+
+            <div class="panel_container" id="transfer_panel">
+                <h1>Cash Transfer</h1>
+                 <ol>
+                    <li id="transfer_list_container">
+                        
+                        <div id="transfer_list_nav">
+                            <img src="../icons/transfer.svg" alt="Transfer">
+                            <span>
+                                <h2>Local Transfer</h2>
+                                <p>Send instant money</p>
+                            </span>
+                        </div>
+
+                        <div id="transfer_list_display">
+                            <p>
+                                <span>
+                                    <img src="../icons/clock.svg" alt="time">
+                                    <i>Time</i>
+                                </span>
+                                <b>Instant</b>
+                            </p>
+
+                            <p>
+                                <span>
+                                    <img src="../icons/mortage.svg" alt="bank">
+                                    <i>Bank</i>
+                                </span>
+                                <b>All Local</b>
+                            </p>
+
+                            <p>
+                                <span>
+                                    <img src="../icons/percent.svg" alt="access">
+                                    <i>Access</i>
+                                </span>
+                                <b>Free</b>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li id="quick_list_panel">
+                        <div id="quick_list_transfer">
+                            <h3>Cash Transfer</h3>
+                            <a href=""> <img src="../icons/refresh.svg" alt=""> <span>Refresh</span></a>
+                        </div>
+
+                        <div id="quick_list_add">
+                            <button onclick="sendTransferCall()"><img src="../icons/plus.svg"></button>
+                            <span>Instant cash transfer</span>
+                        </div>
+                    </li>
+
+                    <li id="available_balance_panel">
+
+                        <div id="balance_list_nav">
+                            <h3>Available Balance</h3>
+                        </div>
+
+                        <div id="balance_list_content"></div>
+
+                    </li>
+
+                    <li id="foreign_list_panel">
+                        <div id="foreign_list_nav">
+                            <h3>Foreign Transfer</h3>
+                            <img src="../icons/transfer.svg">
+                        </div>
+
+                        <div id="foreign_list_body">
+                            Not Activated
+                        </div>
+                    </li>
+                 </ol>
+            </div>
+
+            <div class="panel_container" id="cards_panel">
+                <h1>Credit/Debit Card</h1>
+
+                <p id="card_panel_account"></p>
+
+                <ol>
+                    <li class="cards_list_conatiner">
+                        <h3 class="card_category">Credit Card</h3>
+                        <div id="cards_list_credit">
+                            <span>N/A</span>
+                            <button onclick="applyForBankCard(this)">Apply now</button>
+                        </div>
+                    </li>
+
+                    <li class="cards_list_conatiner">
+                        <h3 class="card_category">Debit Card</h3>
+                        <div id="cards_list_debit">
+                            <span>N/A</span>
+                            <button onclick="applyForBankCard(this)">Apply now</button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="panel_container" id="home_panel">
+                <!-- only visible for mobile devices -->
+                 <h1>Dashboard</h1>
+                  <ol>
+                    <li>
+                        <div id="home_list_balance"></div>
+
+                        <div id="home_list_transfer">
+                            <h3><span>Quick Transfer</span> <img src="../icons/down.svg" id="quick_btn_img" alt="6474"></h3>
+
+                            <form id="home_quick_form">
+                               <section id="form_quick_account"></section>
+
+                               <section id="form_quick_transfer"></section>
+
+                               <section id="form_quick_name"></section>
+
+                               <section id="form_quick_amount"></section>
+
+                               <button>
+                                    <span>Transfer</span>
+                                    <img src="../icons/transfer.svg">
+                                </button>
+
+                               <div>
+                                    <!-- 
+                                        1. show send button once account number is up to 12
+                                        2. update sender name, account number, amount
+                                    -->
+                               </div>
+
+                            </form>
+
+                        </div>
+                    </li>
+
+                    <li class="home_actives" id="home_list_history">
+                        <h3>Trasaction History</h3>
+                        <div>No Activity</div>
+                    </li>
+
+                    <li id="home_list_metric">
+                        <h3>Our Services</h3>
+
+                        <section id="listed_services"></section>
+
+                        <section id="crypto_feeds">
+                            <div class="cryto_feeder">
+                                <div class="crypto_dash">
+                                    <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+                                    </iframe>
+                                </div>
+                                <div id="mart_stream">Extras</div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <li class="home_actives" id="home_list_active">
+                        <h3>Loan Avaibility</h3>
+                        <div>
+                            Not Activated
+                        </div>
+                    </li>
+                  </ol>
+            </div>
+
+            <div class="panel_container" id="activities_panel">
+                <h1>Recent Activities</h1>
+                 <ol>
+                    <li id="recent_activity_list_temp">
+                        <!-- record any transaction she makes (from local storage) -->
+                        <h2>No Transactions</h2>
+                    </li>
+
+                    <li id="recent_activity_list_main"></li>
+
+                    <!-- <a onclick="sendTransferCall()" id="recent_activity_link" href="#history_transaction">
+                        <span>Transaction History</span>
+                        <img src="../icons/link.svg">
+                    </a> -->
+                 </ol>
+            </div>
+
+            <div class="panel_container" id="profile_panel">
+                <h1>Profile Settings</h1>
+
+                 <ol id="profile_settings"></ol>
+            </div>
+            
+        </section>
+    </main>
+
+    <input type="hidden" id="userBatchNum">
+
+    <footer class="custom_footer"></footer>
+    
+    <!--  -->
+    <script src="../js/url.js"></script>
+    <script src="../js/home_extras.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/crypto_slide.js"></script>
+    <script src="../js/home_nav_bar.js"></script>
+</body>
+</html>
