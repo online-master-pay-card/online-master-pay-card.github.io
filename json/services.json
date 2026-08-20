@@ -1,0 +1,50 @@
+[
+    {
+        "item":"insurance",
+        "icon":"insurance.svg"
+    },
+    {
+        "item":"Electricity",
+        "icon":"electric.svg"
+    },
+    {
+        "item":"Loan",
+        "icon":"loan.svg"
+    },
+    {
+        "item":"Mutual Funds",
+        "icon":"funds.svg"
+    },
+    {
+        "item":"Gift Card",
+        "icon":"gift.svg"
+    },
+    {
+        "item":"Water Bills",
+        "icon":"water_bill.svg"
+    },
+    {
+        "item":"Transport & Toll",
+        "icon":"toll_gate.svg"
+    },
+    {
+        "item":"Education",
+        "icon":"education.svg"
+    },
+    {
+        "item":"Cable & TV",
+        "icon":"cable_tv.svg"
+    },
+    {
+        "item":"Travel & Hotel",
+        "icon":"travel.svg"
+    },
+    {
+        "item":"Savings",
+        "icon":"piggy_bank.svg"
+    },
+    {
+        "item":"Networks",
+        "icon":"network.svg"
+    }
+]

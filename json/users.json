@@ -1,0 +1,42 @@
+[
+    {
+        "id":"CA-783848",
+        "firstName":"Jeremy",
+        "middleName":"Arda",
+        "lastName":"Akbas",
+        "email":"drjeremyakbas@gmail.com",
+        "dateBirth":"15/06/1975",
+        "phoneNumber":"+447349457837",
+        "homeAddress":"26 Castle St, Edinburgh EH2 3HT",
+        "accountNumber":8428625675,
+        "passCode":123456,
+        "pinCode":5791,
+        "balance":2180000.00,
+        "currency":"USD",
+        "currencySymbol":"&dollar;",
+        "photo":"profile_pics.svg",
+        "category":"Technology",
+        "status":"active",
+        "transfer":"atm"
+    },
+    {
+        "id":"BD-783848",
+        "firstName":"Pajero",
+        "middleName":"Sampson",
+        "lastName":"Micheal",
+        "email":"robsco@outlook.com",
+        "dateBirth":"15/06/1995",
+        "phoneNumber":"+447349457837",
+        "homeAddress":"New Castle St, Edinburgh EH2 3HT",
+        "accountNumber":8028625600,
+        "passCode":123456,
+        "pinCode":5791,
+        "balance":2180000.00,
+        "currency":"USD",
+        "currencySymbol":"&dollar;",
+        "photo":"profile_pics.svg",
+        "category":"Student",
+        "status":"processing",
+        "transfer":"atm"
+    }
+]
