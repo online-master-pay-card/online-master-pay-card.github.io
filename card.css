@@ -363,17 +363,25 @@ h1{
 
 @media (max-width:650px) {
     #nav{
+        border-radius: 0;
         font-size: 0.9rem;
-        left: 4%;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 
     #nav_list li{
-        padding: 0rem 0.2rem;
+        padding: 0 3px 0 0;
     }
 
     #nav_list img{
-        width: 60px;
+        width: 50px;
         margin-right: 0.5rem;
+    }
+
+    #batch_form{
+        gap: 0rem;
+        padding-right: 1rem;
     }
 
     #batch_form button{
@@ -381,7 +389,7 @@ h1{
     }
 
     #video{
-        margin: 2rem 0rem 1rem 0rem;
+        margin: 5rem 0rem 1rem 0rem;
     }
 
     #video video{
@@ -434,18 +442,21 @@ h1{
 }
 
 @media (max-width:500px) {
-    #nav{
-        top: 0.5rem;
-        left: 3.5%;
-    }
-
     .ma_nav{
         display: none;
     }
 
+    #batch_form{
+        padding-right: 0.8rem;
+    }
+
+    #nav_list li{
+        padding: 0;
+    }
+
     h1{
-        font-size: 1.8rem;
-        margin-right: 2rem;
+        font-size: 1.5rem;
+        margin-right: 0rem;
     }
 
     #landing{
@@ -474,15 +485,9 @@ h1{
 }
 
 @media (max-width:400px) {
-    #nav{
-        width: 94%;
-        top: 0.5rem;
-        left: 1%;
-    }
-
     h1{
-        font-size: 1.5rem;
-        margin: 2rem 1rem 0rem 1rem;
+        font-size: 1.1rem;
+        margin: 2rem 1rem;
     }
 
     #landing{
@@ -490,8 +495,11 @@ h1{
         font-size: smaller;
     }
 
-    #video{
+    /* #video{
         margin: 5rem 0rem 1rem 0rem;
+    } */
+     .main_section{
+        margin: 0rem;
     }
 
     #reg_form {
@@ -500,11 +508,11 @@ h1{
 
     #master_h2{
         margin: 0rem 0rem 1rem 0rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     #reg_form h3{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .main_absulte h3{
@@ -535,13 +543,16 @@ h1{
     }
 
     h1{
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 500;
+    }
+
+    .main_section{
+        padding: 0.5rem;
     }
 
     .main_absulte h2{
         bottom: 35%;
         font-size: 1rem;
-        left: 7%;
     }
 }
