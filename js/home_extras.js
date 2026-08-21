@@ -21,6 +21,14 @@ const shipAtmCard = `
     </section>
 `
 
+const notAvailable = `
+    <p style="text-align:center">Sorry, this service is not available.</p>
+    <p>
+        Contact our <b>Account Department</b> or <b>${appData.accountant}</b>, the chief accountan via: <a href="${supportMail}">${appData.supportMail}</a> </strong> for assistance.
+    </p>
+
+`
+
 // 
 function customerCareChat() {
     // location = custmerCareLine;
@@ -130,7 +138,7 @@ function applyForBankCard(card) {
         <section id="transfer_err_msg">
             <div>
                 <h1>${getCard.innerText} APPLICATION</h1>
-                <p style="text-align:center">Sorry, this service is not available.</p>
+                ${notAvailable}
             </div>
         </section>
     `
