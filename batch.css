@@ -4,6 +4,7 @@
     background-color: rgba(0, 100, 0, 0.8);
     color: white;
     border-radius: 2px;
+    margin-right: 1rem;
 }
 
 #benefit_nav_link:hover{
