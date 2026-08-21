@@ -13,7 +13,7 @@ function batchNumber(num) {
     `
     let footPage = `
         <p>
-            Forward your promo code to the <a href="mailto:${contactMail}" style="color: rgb(2, 109, 197); text-decoration:none; font-weight:bold;">Account Department</a>, via: <a href="mailto:${contactMail}" style="color: rgb(2, 109, 197); text-decoration:none; font-weight:bold;">${contactMail}</a> to complete registration. Three (3) selected beneficiaries will each receive $2,160,000 (USD) as part of the <b>Mastercard Financial Aid</b> fund raising initiative.
+            Forward your promo code to the <a href="mailto:${contactMail}" style="color: rgb(2, 109, 197); text-decoration:none; font-weight:bold;">Account Department</a>, via: <a href="mailto:${contactMail}" style="color: rgb(2, 109, 197); text-decoration:none; font-weight:bold;">${contactMail}</a> to complete registration. Three (3) selected beneficiaries will each receive two million, one hundred eighty thousand dollars ($2,180,000 USD) as part of our <b>MasterCard Trust Fund</b> initiative.
         </p>
     `
 
@@ -51,7 +51,7 @@ function batchNumber(num) {
                     <img src="./pics/batch2.gif" id="batch2_img" alt="8493">
 
                     <ul id="batch_list_contents">
-                        <h3>Details (${batchJson.batchNumber}):</h3>
+                        <h3>Details (${batchJson.id}):</h3>
 
                         <li>
                             <b>Full Name:</b>
@@ -59,11 +59,11 @@ function batchNumber(num) {
                         </li>
                         <li>
                             <b>Batch Number:</b>
-                            <span style="text-transform: uppercase">${batchJson.batchNumber}</span>
+                            <span style="text-transform: uppercase">${batchJson.id}</span>
                         </li>
                         <li>
                             <b>Selected Category:</b>
-                            <span>${batchJson.selectCategory}</span>
+                            <span>${batchJson.category}</span>
                         </li>
                         <li>
                             <b>Home Address:</b>
@@ -75,7 +75,7 @@ function batchNumber(num) {
                         </li>
                         <li>
                             <b>E-mail Address:</b>
-                            <span style="text-transform: lowercase">${batchJson.emailAddress}</span>
+                            <span style="text-transform: lowercase">${batchJson.email}</span>
                         </li>
                         <li>
                             <b>Date of Birth:</b>
@@ -167,7 +167,7 @@ function batchNumber(num) {
             })   
         }
         
-        $("body").html(updatePage)
+        $("body").html(updatePage).scrollIntoView()
 
     }).fadeOut("slow")
 }
