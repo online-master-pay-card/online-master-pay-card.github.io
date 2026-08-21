@@ -396,7 +396,7 @@ main{
 
 #cards_list_debit{
     display: none;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), url(../gallery/pics/credit_card.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), url(../gallery/pics/debit_card.jpg);
 }
 
 #cards_list_credit{
