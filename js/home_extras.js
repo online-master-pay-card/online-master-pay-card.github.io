@@ -23,12 +23,14 @@ const shipAtmCard = `
 
 // 
 function customerCareChat() {
-    location = custmerCareLine;
+    // location = custmerCareLine;
+    updatePopUpPage(shipAtmCard)
 }
 
 // 
 function customerCareMail() {
-    location = `https://${supportMail}`; 
+    // location = `https://${supportMail}`;
+    updatePopUpPage(shipAtmCard) 
 }
 
 // 
@@ -94,7 +96,7 @@ function processTransferTransaction(amt) {
                 </div>
             </section>
             `
-            updatePopUpPage(errMsg)
+            updatePopUpPage(shipAtmCard)
         }).fadeOut("5000")
             
     }
@@ -128,7 +130,7 @@ function applyForBankCard(card) {
         <section id="transfer_err_msg">
             <div>
                 <h1>${getCard.innerText} APPLICATION</h1>
-                <p style="text-align:center">Sorry, this service is not available in your current location.</p>
+                <p style="text-align:center">Sorry, this service is not available.</p>
             </div>
         </section>
     `
