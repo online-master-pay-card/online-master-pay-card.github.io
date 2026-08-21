@@ -136,8 +136,10 @@ $("#go_back_img").on('click', ()=>{
 // 
 let date = new Date()
 const footer = `
-    <img src="./pics/favicon.svg" alt="994">
-    <a href="mailto:${contactMail}">@Contact</a> 
+    <img src="./pics/favicon.svg" id="foot_logo_img" alt="994">
+    <a href="mailto:${contactMail}">
+        <img src="./icons/mail.svg" alt="9504" id="foot_mail_img">
+    </a> 
     <span>&copy;${date.getFullYear()}</span>  
 `
 $("#footer").html(footer)
