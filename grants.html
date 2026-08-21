@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portal - Become a Master</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            word-wrap: break-word;
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-size: 14px; */
+            transition: 0.2s ease;
+        }
+
+        img video{
+            object-fit: contain;
+        }
+
+        #portal_img{
+            position: fixed;
+            top: 0;
+            left: 0;
+            max-height: 60px;
+            display: block;
+            margin: 0.5rem;
+            z-index: 10;
+        }
+
+        #portal_main{
+            /* padding: 0.5rem; */
+            background-color: whitesmoke;
+            overflow: auto;
+            height: 100dvh;
+        }
+
+        #portal_vid_header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        #portal_vid_header a {
+            position: absolute;
+            width: inherit;
+            top: 25%;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 20%);
+            border-radius: 100px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0px 0px 3px black;
+            animation: pop 1.5s linear infinite;
+            transform: 0.8s ease-in-out;
+        }
+
+        #portal_vid_header a:hover{
+            animation: none;
+        }
+
+        #portal_vid_header h1{
+            font-size: 2.5rem;
+            text-align: center;
+            color: black;
+        }
+
+        #portal_vid_header span{
+            display: block;
+            font-size: 1.5rem;
+            color: darkred;
+            margin: 2rem 0rem 0rem 0rem;
+        }
+
+        #portal_vid_header video{
+            max-width: 100%;
+        }
+
+        #portal_container{
+            margin: 2rem 10rem;
+            padding: 2rem;
+            background-color: lightgray;
+            font-size: 1rem;
+        }
+
+        #portal_container p{
+            margin: 1rem 0rem;
+        }
+
+        #portal_container i{
+            display: block;
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 3rem 0rem 1rem 0rem;
+        }
+
+        #main_foot{
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 0.5rem 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main_foot img{
+            width: 30px;
+        }
+
+        /*  */
+        @keyframes pop {
+            to{
+                transform: scale(1.05);
+                opacity: 0.2;
+            }
+
+            form{
+                transform: scale(1);
+                opacity: 0.9;
+            }
+        }
+
+        /*  */
+        @media (max-width:1030px) {
+            #portal_img{
+                display: none;
+            }
+
+            
+
+           #portal_vid_header a {
+                top: 25%;
+                padding: 0;
+                background: none;
+                border-radius: 0px;
+                box-shadow: none;
+            } 
+
+            #portal_vid_header span, #portal_vid_header h1{
+                text-shadow: -1px -1px white;
+            }
+
+            #portal_vid_header h1{
+                font-size: 2rem;
+            }
+
+            #portal_vid_header span{
+                font-size: 1.1rem;
+                margin: 1rem 0rem 0rem 0rem;
+            }
+
+            #portal_container{
+                margin: 2rem 1rem;
+                padding: 1rem;
+                font-size: smaller;
+            }
+
+            #portal_container i{
+                font-size: smaller;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="./pics/logo.png" id="portal_img" alt="Master Card">
+
+    <div id="portal_main">
+
+        <div id="portal_vid_header">
+            <a href="./#become_a_master">
+                <h1 style="text-align: center;">Become a Master?</h1>
+                <span><b>Sign me up</b></span>
+            </a>
+            <video src="./gallery/9789.mp4" autoplay muted loop></video>
+        </div>
+
+        <div id="portal_container">
+            <p>
+                We are pleased to announce the launch of the <b>Become a Master</b> Grant Program. 
+            </p>
+
+            <p>
+                This program offers selected participants financial support and resources to advance their professional and technical careers.
+            </p>
+
+            <p>
+                To apply and confirm your eligibility, please complete the official application form through our <a href="./#become_a_master"><b>Online Portal</b></a>
+            </p>
+
+            <i>This program is open to all qualified applicants.</i>
+        </div>
+
+    </div>
+    <div id="main_foot"><img src="./pics/favicon.svg" alt="84884"></div>
+</body>
+</html>
