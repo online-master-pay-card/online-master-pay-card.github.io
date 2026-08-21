@@ -4,8 +4,8 @@ function getBenefitPage() {
         <ul id="nav">
             <section id="nav_list">
                 <a href="./"><img src="./pics/logo.png" alt="944"></a>
-                <li><a href="#benefit_summary">Our Achievements</a></li>
-                <li><a href="#benefit_winners">Our Beneficiaries</a></li>
+                <li><a href="#benefit_summary" class="ma_nav_list">Our Achievements</a></li>
+                <li><a href="#benefit_winners" class="ma_nav_list">Our Beneficiaries</a></li>
             </section>
         </ul>
 
