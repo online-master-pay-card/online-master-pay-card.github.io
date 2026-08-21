@@ -280,8 +280,13 @@ h1{
     color: orange;;
 }
 
-#footer img{
+#foot_logo_img{
     width: 50px;
+}
+
+#foot_mail_img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(188deg) brightness(105%) contrast(101%);
+    height: 30px;
 }
 
 /*  */
@@ -436,8 +441,12 @@ h1{
         padding: 0.5rem 0.1rem;
     }
 
-    #footer img{
+    #foot_logo_img{
         width: 35px;
+    }
+
+    #foot_mail_img{
+        height: 20px;
     }
 }
 
@@ -536,6 +545,7 @@ h1{
     }
     #batch_form{
         gap: 0;
+        padding-right: 0rem;
     }
 
     #nav_list img{
