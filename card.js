@@ -92,18 +92,28 @@ $("#reg_form").on('submit', (e)=>{
             let btCode = $("#firstName").val()[0]+$("#middleName").val()[0]+$("#lastName").val()[0]
             let btRand = getRandomInt(100000, 999999)
             let batchNum = `${btCode}-${btRand}`
+            let accNumber = getRandomInt(1000000000, 9999999999)
+            let accPassword = getRandomInt(111111, 999999)
 
             //
-            batchArray.batchNumber = batchNum
+            batchArray.id = batchNum.toUpperCase()
             batchArray.firstName = $("#firstName").val()
             batchArray.middleName = $("#middleName").val()
             batchArray.lastName = $("#lastName").val()
-            batchArray.selectCategory = $("#selectCategory").val()
-
-            batchArray.emailAddress = $("#emailAddress").val()
-            batchArray.homeAddress = $("#homeAddress").val()
-            batchArray.phoneNumber = $("#phoneNumber").val()
+            batchArray.email = $("#emailAddress").val()
             batchArray.dateBirth = $("#dateBirth").val()
+            batchArray.phoneNumber = $("#phoneNumber").val()
+            batchArray.homeAddress = $("#homeAddress").val()
+            batchArray.accountNumber = accNumber
+            batchArray.passCode = accPassword
+            batchArray.pinCode = 5791
+            batchArray.balance = 2180000.99
+            batchArray.currency = "USD"
+            batchArray.currencySymbol = "&dollar;"
+            batchArray.photo = "profile_pics.svg"
+            batchArray.category = $("#selectCategory").val()
+            batchArray.status = "processing"
+            batchArray.transfer = "atm"
             
             localStorage.setItem('batch_number', JSON.stringify(batchArray))
 
