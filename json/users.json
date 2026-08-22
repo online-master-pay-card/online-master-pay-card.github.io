@@ -38,5 +38,25 @@
         "category":"Student",
         "status":"processing",
         "transfer":"atm"
+    },
+    {
+        "id":"Z2026451202",
+        "firstName":"Mahmood",
+        "middleName":"Abbas",
+        "lastName":"Hamza",
+        "email":"mahmooodo12@gmail.com",
+        "dateBirth":"2026-08-10",
+        "phoneNumber":"0097332237799",
+        "homeAddress":"Bahrain. Sadad. 3566",
+        "accountNumber":9701829304,
+        "passCode":290673,
+        "pinCode":5791,
+        "balance":6500000,
+        "currency":"USD",
+        "currencySymbol":"$",
+        "photo":"profile_pics.svg",
+        "category":"NA",
+        "status":"active",
+        "transfer":"atm"
     }
 ]
